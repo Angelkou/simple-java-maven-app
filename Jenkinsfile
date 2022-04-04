@@ -1,7 +1,7 @@
 pipeline {
     agent any
      parameters {
-            choice(name: 'BRANCH', choices:['feature/revamp'])
+            choice(name: 'BRANCH', choices:['master'])
             string(name: 'VERSION_NAME', defaultValue: '8.12.1')
             string(name: 'VERSION_CODE', defaultValue: '2147483647')
             choice(name: 'ENV', choices:['StagUnpinned','ProdUnpinned','StagPinned','ProdPinned'])
